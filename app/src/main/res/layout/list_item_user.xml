@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/is_lable"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/nngt"
+        android:gravity="center"
+        android:text="라벨"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/is_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/nngt"
+        android:text="이슈제목"
+        android:textColor="#FFFFFF"
+        android:textStyle="normal|bold"
+        app:layout_constraintStart_toEndOf="@+id/is_lable"
+        app:layout_constraintTop_toTopOf="@+id/is_lable" />
+
+    <TextView
+        android:id="@+id/is_contents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/nngt"
+        android:text="이슈내용"
+        android:textColor="#FFFFFF"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/is_lable"
+        app:layout_constraintStart_toEndOf="@+id/is_lable"
+        app:layout_constraintTop_toBottomOf="@+id/is_title" />
+
+    <TextView
+        android:id="@+id/is_writer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/nngt"
+        android:text="이슈작성자"
+        android:textColor="#FFFFFF"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

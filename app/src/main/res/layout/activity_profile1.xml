@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:fontFamily="@font/nngt"
+            android:gravity="center"
+            android:text="Profile"
+            android:textColor="#2c2c33"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="213dp"
+            android:layout_height="208dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_account_circle_48px_512" />
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/nngt"
+            android:hint="Name"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#99FFFFFF"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/teamText"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/nngt"
+            android:hint="team"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#99FFFFFF"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <ImageView
+                    android:id="@+id/mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tint="#FFFFFF"
+                    app:srcCompat="@drawable/mailbtn" />
+
+                <TextView
+                    android:id="@+id/mailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/nngt"
+                    android:hint="12345@mail.com"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#99FFFFFF"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <ImageView
+                    android:id="@+id/smartphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tint="#FFFFFF"
+                    app:srcCompat="@drawable/smartphonebtn" />
+
+                <TextView
+                    android:id="@+id/phoneText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/nngt"
+                    android:hint="010-0000-0000"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#99FFFFFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tint="#FFFFFF"
+                    app:srcCompat="@drawable/callbtn" />
+
+                <TextView
+                    android:id="@+id/officeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/nngt"
+                    android:hint="02-000-0000"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#99FFFFFF"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/Btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/roundingbtn"
+                android:fontFamily="@font/nngt"
+                android:text="Detail"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

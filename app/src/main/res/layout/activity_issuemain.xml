@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".issue.IssueMain">
+
+    <Button
+        android:id="@+id/menuBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|right"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/menubtn"
+        android:backgroundTint="#000000"
+        android:fontFamily="@font/nngt"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:iconTint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:fontFamily="@font/nngt"
+            android:gravity="center"
+            android:text="Issue"
+            android:textColor="#2c2c33"
+            android:textSize="20sp" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
