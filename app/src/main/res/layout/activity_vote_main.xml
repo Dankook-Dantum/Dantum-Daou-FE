@@ -5,246 +5,65 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@drawable/back"
 
     android:orientation="vertical"
     tools:context=".Vote_Main">
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="0dp"
-        android:layout_height="80dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
+    <Button
+        android:id="@+id/deleteListButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|right"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/deletebtn"
+        android:fontFamily="@font/nngt"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/AddBtn"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center|right"
-            android:layout_marginTop="25dp"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/plusbtn"
-            android:fontFamily="@font/nngt"
-            android:foregroundGravity="center"
-            android:gravity="center"
-            android:textColor="#000000"
-            android:textStyle="bold" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/AddBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|right"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/plusbtn"
+        android:fontFamily="@font/nngt"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/realVoteTitle"
+            android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="10dp"
             android:fontFamily="@font/nngt"
             android:gravity="center"
             android:text="Vote"
             android:textColor="#2c2c33"
             android:textSize="20sp" />
 
-        <ScrollView
+        <ListView
+            android:id="@+id/voteListView"
             android:layout_width="match_parent"
-            android:layout_height="725dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:orientation="vertical">
-
-                <Button
-                    android:id="@+id/button10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/roundingbtn"
-                    android:fontFamily="@font/nngt"
-                    android:text="투표4"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/button0"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/roundingbtn"
-                    android:fontFamily="@font/nngt"
-                    android:text="투표4"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/button1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/roundingbtn"
-                    android:fontFamily="@font/nngt"
-                    android:text="투표4"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/VoteBtn1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/roundingbtn"
-                    android:fontFamily="@font/nngt"
-                    android:text="투표1"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    tools:layout_editor_absoluteX="85dp"
-                    tools:layout_editor_absoluteY="305dp" />
-
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/roundingbtn"
-                    android:fontFamily="@font/nngt"
-                    android:text="투표2"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/roundingbtn"
-                    android:fontFamily="@font/nngt"
-                    android:text="투표3"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/button5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/roundingbtn"
-                    android:fontFamily="@font/nngt"
-                    android:text="투표4"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/button6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/roundingbtn"
-                    android:fontFamily="@font/nngt"
-                    android:text="투표4"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/button7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/roundingbtn"
-                    android:fontFamily="@font/nngt"
-                    android:text="투표4"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/button8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/roundingbtn"
-                    android:fontFamily="@font/nngt"
-                    android:text="투표4"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/button9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/roundingbtn"
-                    android:fontFamily="@font/nngt"
-                    android:text="투표4"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-        </ScrollView>
+            android:layout_height="match_parent"
+            android:fontFamily="@font/nngt"
+            android:textColor="#000000"
+            android:choiceMode = "singleChoice"/>
 
     </LinearLayout>
 

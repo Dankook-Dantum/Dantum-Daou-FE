@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back"
     tools:context=".issue.IssueMain">
 
     <Button
@@ -32,7 +31,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/realVoteTitle"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:fontFamily="@font/nngt"
@@ -42,9 +41,10 @@
             android:textSize="20sp" />
 
         <ListView
-            android:id="@+id/listView"
+            android:id="@+id/issueList"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:choiceMode = "singleChoice"/>
 
     </LinearLayout>
 

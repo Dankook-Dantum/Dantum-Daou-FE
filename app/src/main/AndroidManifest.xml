@@ -26,9 +26,7 @@
         <activity
             android:name=".Vote_Page"
             android:exported="false" />
-        <activity
-            android:name=".Result_Page"
-            android:exported="false" />
+
 
 
         <activity
@@ -39,10 +37,10 @@
             android:name=".issue.IssueMain"
             android:exported="false" />
         <activity
-            android:name=".Profile1"
+            android:name=".profile.Profile1"
             android:exported="false" />
         <activity
-            android:name=".Profile2"
+            android:name=".profile.Profile2"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

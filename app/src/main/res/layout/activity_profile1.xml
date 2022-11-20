@@ -23,9 +23,9 @@
             android:textSize="20sp" />
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="213dp"
-            android:layout_height="208dp"
+            android:id="@+id/profileImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_gravity="center"
             app:srcCompat="@drawable/ic_account_circle_48px_512" />
 
@@ -52,7 +52,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="15dp"
             android:fontFamily="@font/nngt"
-            android:hint="team"
+            android:hint="Team"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textColorHint="#99FFFFFF"
@@ -66,15 +66,21 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:weightSum="5">
 
                 <ImageView
                     android:id="@+id/mail"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0"
                     android:tint="#FFFFFF"
                     app:srcCompat="@drawable/mailbtn" />
 
@@ -82,7 +88,6 @@
                     android:id="@+id/mailText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="4"
                     android:fontFamily="@font/nngt"
                     android:hint="12345@mail.com"
                     android:textColor="#FFFFFF"
@@ -94,15 +99,20 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:weightSum="5">
 
                 <ImageView
                     android:id="@+id/smartphone"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
                     android:tint="#FFFFFF"
                     app:srcCompat="@drawable/smartphonebtn" />
 
@@ -110,7 +120,6 @@
                     android:id="@+id/phoneText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="4"
                     android:fontFamily="@font/nngt"
                     android:hint="010-0000-0000"
                     android:textColor="#FFFFFF"
@@ -121,15 +130,21 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:weightSum="5">
 
                 <ImageView
                     android:id="@+id/imageView6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0"
                     android:tint="#FFFFFF"
                     app:srcCompat="@drawable/callbtn" />
 
@@ -137,7 +152,7 @@
                     android:id="@+id/officeText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="4"
+                    android:layout_weight="0"
                     android:fontFamily="@font/nngt"
                     android:hint="02-000-0000"
                     android:textColor="#FFFFFF"
@@ -151,7 +166,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/roundingbtn"
                 android:fontFamily="@font/nngt"
                 android:text="Detail"

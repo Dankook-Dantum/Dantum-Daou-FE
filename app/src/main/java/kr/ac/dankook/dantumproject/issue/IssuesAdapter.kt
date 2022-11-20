@@ -26,7 +26,7 @@ class IssuesAdapter (val context: Context, val UserList: ArrayList<Issues>) : Ba
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val view: View = LayoutInflater.from(context).inflate(R.layout.list_item_user, null)
 
-        val lable = view.findViewById<TextView>(R.id.is_lable)
+        val lable = view.findViewById<TextView>(R.id.vt_title)
         val issuetitle = view.findViewById<TextView>(R.id.is_title)
         val issuecontents = view.findViewById<TextView>(R.id.is_contents)
         val issuewriter = view.findViewById<TextView>(R.id.is_writer)

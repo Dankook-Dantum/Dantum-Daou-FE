@@ -1,4 +1,4 @@
-package kr.ac.dankook.dantumproject
+package kr.ac.dankook.dantumproject.profile
 
 import com.google.gson.annotations.SerializedName
 
@@ -17,7 +17,7 @@ data class User(
     @SerializedName("office")
     var office : String?=null,
     @SerializedName("officeNumber")
-    var officeNumber : String?=null,
+    var officeNumber : String?=null
 
 
 )
