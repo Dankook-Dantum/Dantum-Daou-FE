@@ -27,14 +27,7 @@ class IssueMain : AppCompatActivity() {
 
         val Adapter = IssuesAdapter(this, Userlist)
         issueList.adapter = Adapter
-        /*
-        deleteListButton.setOnClickListener {
 
-
-
-            // 선택 초기화
-            issueList.clearChoices()
-        }*/
 
         var menuBtn = findViewById<Button>(R.id.menuBtn)
         menuBtn.setOnClickListener {
