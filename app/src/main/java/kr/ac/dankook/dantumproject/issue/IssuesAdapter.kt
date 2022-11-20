@@ -8,6 +8,7 @@ import android.widget.BaseAdapter
 import android.widget.TextView
 import kr.ac.dankook.dantumproject.R
 
+//issue adapter
 class IssuesAdapter (val context: Context, val UserList: ArrayList<Issues>) : BaseAdapter()
 
 {
@@ -32,6 +33,7 @@ class IssuesAdapter (val context: Context, val UserList: ArrayList<Issues>) : Ba
         val issuewriter = view.findViewById<TextView>(R.id.is_writer)
 
 
+        //UserList의 각 인덱스에 정보 저장
         val user = UserList[position]
         lable.text = user.lable
         issuetitle.text = user.issuetitle

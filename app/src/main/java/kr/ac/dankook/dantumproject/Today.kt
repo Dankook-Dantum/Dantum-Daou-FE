@@ -20,15 +20,18 @@ class Today : AppCompatActivity() {
         val intentVote = Intent(this,Vote_Main::class.java)
         val intentIssue = Intent(this, IssueMain::class.java)
 
+        //내정보 화면으로 이동
         profileBtn.setOnClickListener {
             startActivity(intentProfile)
 
         }
 
+        //투표페이지로 이동
         voteBtn.setOnClickListener {
             startActivity(intentVote)
         }
 
+        //이슈페이지로 이동
         issueBtn.setOnClickListener {
             startActivity(intentIssue)
 

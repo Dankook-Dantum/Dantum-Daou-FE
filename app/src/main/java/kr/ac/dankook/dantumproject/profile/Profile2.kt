@@ -18,11 +18,13 @@ class Profile2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile2)
 
+        //xml파일에 있는 위젯 정의
         val officeLocation = findViewById<TextView>(R.id.officeLocation)
         val introduceText = findViewById<TextView>(R.id.introduceText)
         val mbtiText = findViewById<TextView>(R.id.mbtiText)
         val stackText = findViewById<TextView>(R.id.stackText)
 
+        //retrofit을 이용하여 서버연동
         val retrofit = Retrofit.Builder()
             .baseUrl("http://3.37.33.177:8080/")
             .addConverterFactory(GsonConverterFactory.create())
@@ -35,6 +37,7 @@ class Profile2 : AppCompatActivity() {
 
                 var detailProfile = response.body()!!
 
+                //유저의 정보를 서버에서 받아 위젯에 할당
                 officeLocation.setText(detailProfile.office.toString())
                 introduceText.setText(detailProfile.introduce.toString())
                 mbtiText.setText(detailProfile.mbti.toString())
@@ -51,7 +54,7 @@ class Profile2 : AppCompatActivity() {
 
 
 
-
+        //closeBtn을 누르면 전화면으로 전환
         val closeBtn = findViewById<ImageButton>(R.id.closeBtn)
         closeBtn.setOnClickListener {
             Log.d("Profile","BACK button presssed")

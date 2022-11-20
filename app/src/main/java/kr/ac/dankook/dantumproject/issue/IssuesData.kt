@@ -2,6 +2,7 @@ package kr.ac.dankook.dantumproject.issue
 
 import com.google.gson.annotations.SerializedName
 
+//이슈정보들과 연동하기 위한 data class
 data class IssuesData(
 
     @SerializedName("issueIdx")

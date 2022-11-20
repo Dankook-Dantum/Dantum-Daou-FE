@@ -2,6 +2,7 @@ package kr.ac.dankook.dantumproject.profile
 
 import com.google.gson.annotations.SerializedName
 
+//기본 유저 프로필 페이지와 연동하기 위한 data class
 data class User(
 
     @SerializedName("userIdx")

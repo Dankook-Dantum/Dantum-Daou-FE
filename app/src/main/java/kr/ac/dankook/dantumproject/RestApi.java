@@ -8,6 +8,7 @@ import kr.ac.dankook.dantumproject.profile.Users2;
 import retrofit2.Call;
 import retrofit2.http.GET;
 
+//Back-End Server와 연동하기 위한 인터페이스
 public interface RestApi {
     @GET("users/6")
     Call<User> getUsers();
