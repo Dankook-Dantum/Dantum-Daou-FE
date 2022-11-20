@@ -54,6 +54,7 @@ class Vote_Main : AppCompatActivity() {
         }
 
         deleteListButton.setOnClickListener {
+            Toast.makeText(applicationContext,"삭제할 항목을 선택하세요",Toast.LENGTH_SHORT).show()
 
             voteListView.onItemClickListener = AdapterView.OnItemClickListener{ parent, view, position: Int, id->
                 val selectItem = parent?.getItemAtPosition(position) as Votes
@@ -64,6 +65,7 @@ class Vote_Main : AppCompatActivity() {
             if(checked >=0 && checked < Adapter.count){
                 voteitem.removeAt(checked)
                 Adapter.notifyDataSetChanged()
+                Toast.makeText(applicationContext,"삭제되었습니다",Toast.LENGTH_SHORT).show()
             }
 
             // 선택 초기화

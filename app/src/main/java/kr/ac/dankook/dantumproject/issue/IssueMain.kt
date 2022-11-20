@@ -7,6 +7,7 @@ import android.util.Log
 import android.widget.AdapterView
 import android.widget.Button
 import android.widget.PopupMenu
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_issuemain.*
 import kotlinx.android.synthetic.main.activity_vote_main.*
 import kr.ac.dankook.dantumproject.R
@@ -55,14 +56,14 @@ class IssueMain : AppCompatActivity() {
                     R.id.delete ->{
 
                         val checked = issueList.checkedItemPosition
-                        Log.d("선택된 놈 ", checked.toString())
+                        Log.d("Selected ", checked.toString())
 
                         if(checked >=0 && checked < Adapter.count){
                             Userlist.removeAt(checked)
                             Adapter.notifyDataSetChanged()
                         }
 
-                        //Toast.makeText(applicationContext,"삭제클릭",Toast.LENGTH_SHORT).show()
+                        Toast.makeText(applicationContext,"삭제되었습니다",Toast.LENGTH_SHORT).show()
                         return@setOnMenuItemClickListener true
                     }else->{
                         return@setOnMenuItemClickListener false
